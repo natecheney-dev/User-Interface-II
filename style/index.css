@@ -34,6 +34,9 @@ blockquote, q {
     padding:0;
     margin:0;
     max-width:100%; 
+    border:1px solid grey;
+    
+    
 
 }
 html{
@@ -48,23 +51,26 @@ body{
     display:flex;
     background-color:rgb(248, 213, 213);
 }
-.top img{
-    display:block;
-}
 .top .topright{
     text-align:center;
     margin:auto auto;
     width:50%;
 }
+.top .topleft{
+    width:50%;
+}
+
 .top h1{
     font-size:9rem;
 }
 .top button{
-    font-size: 3rem;
+    display:inline-block;
     color:rgb(248, 213, 213);
     background-color:black;
     padding:2%;
+    font-size:2.5rem;
 }
+
 .top button:hover{
     color:black;
     background-color:rgb(212, 164, 164);
@@ -86,11 +92,10 @@ body{
     justify-content: space-evenly;
 }
 .bottom{
-    margin-top: .5%;
-    margin-bottom:.5%;
+    margin:0;
 }
 .middle{
-    margin-top: 1.5%;
+    margin:0;
 }
 footer{
     text-align:center;
@@ -99,36 +104,39 @@ footer{
     background-color:rgb(212, 164, 164);
 }
 header h1{
-    margin-left:3.5%;
-    width:100%;
-    
+    margin:0 3.5%;
 }
 header{
-    display:flex;
     font-size:5rem;
     background-color:rgb(212, 164, 164);
     flex-wrap:wrap;
 }
 header .verytop {
     margin:.4% 3%;
-    font-size:5.5rem;
-    display:flex;
+
 }
 nav{
     display:flex;
     font-size:2rem;
+    width:100%;
 }
+
 nav a:hover{
     color:rgb(24, 7, 7);
-    background-color:rgb(248, 213, 213)
+    background-color:rgb(248, 213, 213);
+    border:2px solid black;
 
 }
 nav a{
-
-    padding:.4% 5%;
-    border:1px solid rgb(248, 213, 213);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid rgb(248, 213, 213);
     background-color:rgb(24, 7, 7);
     color:white;
+    width:20%;
+    height:5vh;
+    
 }
 footer button{
     font-size:1.5rem;
@@ -143,3 +151,105 @@ footer button:hover{
     border:1px solid black;
 }
 
+/* Day 2 800px */
+@media(max-width:800px){
+    /* Header */
+    header h1{
+        text-align:center;
+    }
+    nav a{
+        width:100%;
+    }
+    nav{
+        display:flex;
+        flex-direction:column;
+        width:25%;
+    }
+    header .verytop{
+        display:flex;
+        justify-content:center;
+    }
+    /* Top Picture / [My Name] Text */
+    .top{
+        display:flex;
+        flex-direction: column;
+    }
+    .top h1{
+        font-size:5rem;
+    }
+    .top button{
+        font-size:2rem;
+    }
+    .top .topright{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+        
+    }
+    .top .topleft{
+        width:100%;
+        
+        display:flex;
+        justify-content:center;
+    }
+    .top img{
+        width:85%;
+        display:flex;
+    }
+    .top .topright p{
+        display:flex;
+        font-size:3rem;
+    }
+    .top .topright button{
+        display:flex;
+        width:28%;
+        justify-content:center;
+    }
+    .top .topright p{
+        width:85%;
+    }
+    .middle .pics,.middle .text,.bottom .pics,.bottom .text{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+        width:100%;
+    }
+    .middle .pics,.bottom .pics{
+        padding:5%;
+    }
+    .middle .bottom{
+        width:50%;
+    }
+    .picturesection{
+        display:flex;
+    }
+}
+
+/* Day 2 500px */
+@media(max-width:500px){
+    .top h1{
+        font-size:2rem;
+    }
+    .top button{
+        font-size:1.5rem;
+    }
+    .top .topright p{
+        font-size:1.75rem;
+    }
+    nav a{
+        height:3vh;
+    }
+    nav{
+        width:25%;
+        
+    }
+    header .verytop{
+        height:12vh;
+    }
+    /* Top Picture / [My Name] Text */
+    
+    .middle .pics div:nth-child(4),.bottom .pics div:nth-child(4){
+        display:none;
+    }
+}
