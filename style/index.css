@@ -1,1 +1,145 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+/* 	border: 0; */
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%; 
+
+}
+html{
+	font-size:62.5%;
+    font-family: 'Zilla Slab', serif;
+}
+body{
+	font-size:1.6rem;
+	line-height:1.5;
+}
+.top{
+    display:flex;
+    background-color:rgb(248, 213, 213);
+}
+.top img{
+    display:block;
+}
+.top .topright{
+    text-align:center;
+    margin:auto auto;
+    width:50%;
+}
+.top h1{
+    font-size:9rem;
+}
+.top button{
+    font-size: 3rem;
+    color:rgb(248, 213, 213);
+    background-color:black;
+    padding:2%;
+}
+.top button:hover{
+    color:black;
+    background-color:rgb(212, 164, 164);
+}
+.top p{
+    font-size: 5rem;
+}
+.middle .pics{
+    display:flex;
+    justify-content: space-evenly;
+}
+.bottom .text, .middle .text{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bottom .pics{
+    display:flex;
+    justify-content: space-evenly;
+}
+.bottom{
+    margin-top: .5%;
+    margin-bottom:.5%;
+}
+.middle{
+    margin-top: 1.5%;
+}
+footer{
+    text-align:center;
+    padding: 5%;
+    font-size:3rem;
+    background-color:rgb(212, 164, 164);
+}
+header h1{
+    margin-left:3.5%;
+    width:100%;
+    
+}
+header{
+    display:flex;
+    font-size:5rem;
+    background-color:rgb(212, 164, 164);
+    flex-wrap:wrap;
+}
+header .verytop {
+    margin:.4% 3%;
+    font-size:5.5rem;
+    display:flex;
+}
+nav{
+    display:flex;
+    font-size:2rem;
+}
+nav a:hover{
+    color:rgb(24, 7, 7);
+    background-color:rgb(248, 213, 213)
+
+}
+nav a{
+
+    padding:.4% 5%;
+    border:1px solid rgb(248, 213, 213);
+    background-color:rgb(24, 7, 7);
+    color:white;
+}
+footer button{
+    font-size:1.5rem;
+    background-color:rgb(24, 7, 7);
+    color:white;
+    padding:.9%;
+    border:1px solid rgb(248, 213, 213);
+}
+footer button:hover{
+    background-color:rgb(248, 213, 213);
+    color:rgb(24, 7, 7);
+    border:1px solid black;
+}
+
